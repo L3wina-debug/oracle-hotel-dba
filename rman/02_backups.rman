@@ -1,0 +1,5 @@
+# Full backup, then an incremental strategy (level 0 = base, level 1 = changed blocks only).
+BACKUP DATABASE;
+BACKUP INCREMENTAL LEVEL 0 DATABASE;
+BACKUP INCREMENTAL LEVEL 1 DATABASE;
+LIST BACKUP SUMMARY;

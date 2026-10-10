@@ -1,0 +1,11 @@
+# Oracle / SQL*Plus output
+*.log
+*.lst
+*.trc
+spool*.txt
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

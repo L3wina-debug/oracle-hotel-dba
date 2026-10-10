@@ -1,0 +1,6 @@
+# Enable ARCHIVELOG mode (required for online RMAN backups).
+# Oracle XE starts in NOARCHIVELOG mode. Run with:  rman target / @rman/01_enable_archivelog.rman
+SHUTDOWN IMMEDIATE;
+STARTUP MOUNT;
+ALTER DATABASE ARCHIVELOG;
+ALTER DATABASE OPEN;

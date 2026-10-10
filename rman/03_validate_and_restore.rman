@@ -1,0 +1,9 @@
+# 1. Check that the backups are complete and readable, without restoring anything.
+RESTORE DATABASE VALIDATE;
+
+# 2. Disaster recovery sequence (only after a real loss of datafiles):
+# SHUTDOWN IMMEDIATE;
+# STARTUP MOUNT;
+# RESTORE DATABASE;
+# RECOVER DATABASE;
+# ALTER DATABASE OPEN RESETLOGS;
